@@ -1,7 +1,36 @@
+body {
+    margin: 0 auto;
+    background-color: #252525;
+}
+
 .false {
     color: red;
 }
 
 .true {
     color: seagreen;
+}
+
+main {
+    margin: 0, auto;
+    display: grid;
+    grid-template-columns: 1fr 100ch 1fr;
+}
+
+button {
+    grid-column: 2 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    background-color: darkgray;
+    color: white;
+    width: 40%;
+    justify-self: center;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+ol {
+    grid-column: 2 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: center;
 }

@@ -38,3 +38,20 @@ let arrayOfTodos = [
 
     }
   }
+
+  const populate20Todos = () => {
+    console.log("hello there");
+    for (let i = 0; i < arrayOfTodos.length; i++) {
+    let node = document.createElement("li");
+    let textnode = document.createTextNode(arrayOfTodos[i].title);
+    node.appendChild(textnode);
+    document.getElementById("todo-list").appendChild(node);
+    if (arrayOfTodos[i].completed == false) {
+        node.classList.add("false");
+    }
+    if (arrayOfTodos[i].completed == true) {
+      node.classList.add("true");
+  }
+
+  }
+  }
