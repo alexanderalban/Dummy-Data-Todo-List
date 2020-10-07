@@ -29,5 +29,12 @@ let arrayOfTodos = [
       let textnode = document.createTextNode(arrayOfTodos[i].title);
       node.appendChild(textnode);
       document.getElementById("todo-list").appendChild(node);
+      if (arrayOfTodos[i].completed == false) {
+          node.classList.add("false");
       }
+      if (arrayOfTodos[i].completed == true) {
+        node.classList.add("true");
+    }
+
+    }
   }
