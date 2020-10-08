@@ -29,6 +29,20 @@ button {
     box-shadow: 0 0 10px grey;
 }
 
+label{ grid-column: 2 / 3;
+    justify-self: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input {
+    grid-column: 2 / 3;
+    width: 40%;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
 ol {
     grid-column: 2 / 3;
     font-family: Arial, Helvetica, sans-serif;

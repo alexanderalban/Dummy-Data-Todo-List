@@ -13,6 +13,12 @@
         <button onclick="logTodos()">Log Todos</button>
         <button onclick="populateTodos()">Populate All Todos</button>.
         <button onclick="populate20Todos()">Populate 20 Todos</button>
+        <label for="User-Id">User ID (between 1 and 10):</label>
+        <input type="number" id="user-id" name="user-id" min="1" max="10" placeholder="User ID">
+        <button onclick="showUserIDTodos()">Show User ID Results</button>
+        <button onclick="clearTodos()">Clear Todos</button>
+        <button>Show Completed Todos</button>
+        <button>Show Not Completed Todos</button>
         <ol id="todo-list">
           <!-- LIs will go here -->
         </ol>

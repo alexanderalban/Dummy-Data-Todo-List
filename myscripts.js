@@ -39,9 +39,13 @@ let arrayOfTodos = [
     }
   }
 
+
+
+  // 20 ONLY FILTERING
   const populate20Todos = () => {
-    console.log("hello there");
-      for (let i = 0; i < arrayOfTodos.length - 180; i++) {
+    console.log("hello");
+    
+      for (let i = 0; i < arrayOfTodos.length; i++) {
       let node = document.createElement("li");
       let textnode = document.createTextNode(arrayOfTodos[i].title);
       node.appendChild(textnode);
@@ -56,4 +60,21 @@ let arrayOfTodos = [
     }
 
  
+  }
+
+
+  const clearTodos = () => {
+    document.getElementById("todo-list").innerHTML = "";
+  }
+
+  // User ID Filtering
+
+  const showUserIDTodos = () => {
+    console.log("hi hi");
+    document.getElementById("todo-list").innerHTML = "";
+    
+
+    
+
+
   }
