@@ -41,26 +41,26 @@ let arrayOfTodos = [
 
 
 
-  // 20 ONLY FILTERING
-  const populate20Todos = () => {
-    console.log("hello");
+  // // 20 ONLY FILTERING
+  // const populate20Todos = () => {
+  //   console.log("hello");
     
-      for (let i = 0; i < arrayOfTodos.length; i++) {
-      let node = document.createElement("li");
-      let textnode = document.createTextNode(arrayOfTodos[i].title);
-      node.appendChild(textnode);
-      document.getElementById("todo-list").appendChild(node);
-      if (arrayOfTodos[i].completed == false) {
-          node.classList.add("false");
-      }
-      if (arrayOfTodos[i].completed == true) {
-        node.classList.add("true");
-    }
+  //     for (let i = 0; i < arrayOfTodos.length; i++) {
+  //     let node = document.createElement("li");
+  //     let textnode = document.createTextNode(arrayOfTodos[i].title);
+  //     node.appendChild(textnode);
+  //     document.getElementById("todo-list").appendChild(node);
+  //     if (arrayOfTodos[i].completed == false) {
+  //         node.classList.add("false");
+  //     }
+  //     if (arrayOfTodos[i].completed == true) {
+  //       node.classList.add("true");
+  //   }
 
-    }
+  //   }
 
  
-  }
+  // }
 
 
   const clearTodos = () => {
@@ -70,11 +70,21 @@ let arrayOfTodos = [
   // User ID Filtering
 
   const showUserIDTodos = () => {
-    console.log("hi hi");
+
     document.getElementById("todo-list").innerHTML = "";
-    
+    let IDnum = document.getElementById("ID-number").value;
+    console.log(IDnum);
+    userresult = arrayOfTodos.filter(array => array.userId == IDnum);
 
-    
+    for (let i = 0; i < arrayOfTodos.length; i++) {
+      let node = document.createElement("li");
+      let textnode = document.createTextNode(arrayOfTodos[i].title);
+      node.appendChild(textnode);
+      document.getElementById("todo-list").appendChild(node);
 
+  
 
   }
+
+}
+    
