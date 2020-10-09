@@ -76,9 +76,9 @@ let arrayOfTodos = [
     console.log(IDnum);
     userresult = arrayOfTodos.filter(array => array.userId == IDnum);
 
-    for (let i = 0; i < arrayOfTodos.length; i++) {
+    for (let i = 0; i < userresult.length; i++) {
       let node = document.createElement("li");
-      let textnode = document.createTextNode(arrayOfTodos[i].title);
+      let textnode = document.createTextNode(userresult[i].title);
       node.appendChild(textnode);
       document.getElementById("todo-list").appendChild(node);
 
