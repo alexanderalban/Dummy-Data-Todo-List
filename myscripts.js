@@ -41,27 +41,32 @@ const populateTodos = () => {
 
 
 
+let x = 20;
+
   // // 20 ONLY FILTERING
-  // const populate20Todos = () => {
-  //   console.log("hello");
+  const populate20Todos = () => {
+    console.log("hello");
+      for (let i = 0; i < x; i++) {
+      let node = document.createElement("li");
+      let textnode = document.createTextNode(arrayOfTodos[i].title);
+      node.appendChild(textnode);
+      document.getElementById("todo-list").appendChild(node);
+      if (arrayOfTodos[i].completed == false) {
+          node.classList.add("false");
+          
+      }
+      if (arrayOfTodos[i].completed == true) {
+        node.classList.add("true");
+    }
+
+    }
     
-  //     for (let i = 0; i < arrayOfTodos.length; i++) {
-  //     let node = document.createElement("li");
-  //     let textnode = document.createTextNode(arrayOfTodos[i].title);
-  //     node.appendChild(textnode);
-  //     document.getElementById("todo-list").appendChild(node);
-  //     if (arrayOfTodos[i].completed == false) {
-  //         node.classList.add("false");
-  //     }
-  //     if (arrayOfTodos[i].completed == true) {
-  //       node.classList.add("true");
-  //   }
-
-  //   }
-
+    x = x + 20;
  
-  // }
+  }
 
+
+  // Clear All Todos Button
 
 const clearTodos = () => {
   document.getElementById("todo-list").innerHTML = "";
