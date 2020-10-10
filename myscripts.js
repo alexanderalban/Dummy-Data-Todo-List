@@ -102,4 +102,42 @@ const showCompletedTodos = () => {
   console.log(IDnum);
   userresult = arrayOfTodos.filter(array => array.userId == IDnum);
   console.log(userresult);
+  completedTodos = userresult.filter(array => array.completed == true);
+
+  for (let i = 0; i < completedTodos.length; i++) {
+    let node = document.createElement("li");
+    let textnode = document.createTextNode(completedTodos[i].title)
+    node.appendChild(textnode);
+    document.getElementById('todo-list').appendChild(node);
+    if (completedTodos[i].completed == true) {
+      node.classList.add("true")
+    }
+    if (completedTodos[i].completed == false) {
+      node.classList.add("not-completed")
+    }
+  }
+
+}
+
+
+const showNotCompletedTodos = () => {
+  document.getElementById("todo-list").innerHTML = "";
+  let IDnum = document.getElementById("ID-number").value;
+  console.log(IDnum);
+  userresult = arrayOfTodos.filter(array => array.userId == IDnum);
+  console.log(userresult);
+  NotcompletedTodos = userresult.filter(array => array.completed == false);
+
+  for (let i = 0; i < NotcompletedTodos.length; i++) {
+    let node = document.createElement("li");
+    let textnode = document.createTextNode(NotcompletedTodos[i].title)
+    node.appendChild(textnode);
+    document.getElementById('todo-list').appendChild(node);
+    if (NotcompletedTodos[i].completed == false) {
+      node.classList.add("false")
+    }
+    if (NotcompletedTodos[i].completed == true) {
+      node.classList.add("completed")
+    }
+  }
 }

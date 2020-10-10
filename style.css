@@ -11,6 +11,14 @@ body {
     color: seagreen;
 }
 
+.completed {
+    display: hidden;
+}
+
+.not-completed {
+    display: hidden;
+}
+
 main {
     margin: 0, auto;
     display: grid;
