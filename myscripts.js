@@ -35,7 +35,6 @@ const populateTodos = () => {
   if (arrayOfTodos[i].completed == true) {
     node.classList.add("true");
   }
-
   }
 }
 
@@ -53,16 +52,11 @@ let x = 20;
       document.getElementById("todo-list").appendChild(node);
       if (arrayOfTodos[i].completed == false) {
           node.classList.add("false");
-          
       }
       if (arrayOfTodos[i].completed == true) {
         node.classList.add("true");
     }
-
-
     }
-  
- 
   }
 
 
@@ -93,12 +87,7 @@ const showUserIDTodos = () => {
     if (userresult[i].completed == true) {
       node.classList.add("true");
     }
-    
-
-  
-
   }
-
 }
 
 
