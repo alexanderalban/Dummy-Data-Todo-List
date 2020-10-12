@@ -59,9 +59,9 @@ let x = 20;
         node.classList.add("true");
     }
 
+
     }
-    
-    x = x + 20;
+  
  
   }
 
@@ -76,7 +76,7 @@ const clearTodos = () => {
 
 const showUserIDTodos = () => {
 
-  document.getElementById("todo-list").innerHTML = "";
+  // document.getElementById("todo-list").innerHTML = "";
   let IDnum = document.getElementById("ID-number").value;
   console.log(IDnum);
   userresult = arrayOfTodos.filter(array => array.userId == IDnum);
@@ -100,6 +100,9 @@ const showUserIDTodos = () => {
   }
 
 }
+
+
+// Show Completed User ID Filtered Todos
     
 const showCompletedTodos = () => {
   document.getElementById("todo-list").innerHTML = "";
@@ -124,6 +127,7 @@ const showCompletedTodos = () => {
 
 }
 
+// Show Not-Completed User ID Filtered Todos
 
 const showNotCompletedTodos = () => {
   document.getElementById("todo-list").innerHTML = "";
