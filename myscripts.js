@@ -40,9 +40,12 @@ const populateTodos = () => {
 
 
 
-let x = 20;
+
 
   // // 20 ONLY FILTERING
+
+  let x = 20;
+
   const populate20Todos = () => {
     console.log("hello");
       for (let i = 0; i < x; i++) {
