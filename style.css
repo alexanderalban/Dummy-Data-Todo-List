@@ -43,7 +43,7 @@ button:hover {
 }
 
 button:active {
-    transform: scale(-.1);
+    transform: scale(-.001);
 }
 
 label{ grid-column: 2 / 3;
