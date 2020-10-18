@@ -1,76 +1,74 @@
 body {
-    margin: 0 auto;
-    background-color: #252525;
+  margin: 0 auto;
+  background-color: #252525;
 }
 
 .false {
-    color: red;
+  color: red;
 }
 
 .true {
-    color: seagreen;
+  color: seagreen;
 }
 
 .completed {
-    display: hidden;
+  display: hidden;
 }
 
 .not-completed {
-    display: hidden;
+  display: hidden;
 }
 
 main {
-    margin: 0, auto;
-    display: grid;
-    grid-template-columns: 1fr minmax(25ch, 100ch) 1fr;
+  margin: 0, auto;
+  display: grid;
+  grid-template-columns: 1fr minmax(25ch, 100ch) 1fr;
 }
 
 button {
-    grid-column: 2 / 3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-    background-color: darkgray;
-    color: white;
-    width: 40%;
-    justify-self: center;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px grey;
-    transition: .5s ease-in-out;
+  grid-column: 2 / 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  background-color: darkgray;
+  color: white;
+  width: 40%;
+  justify-self: center;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px grey;
+  transition: 0.5s ease-in-out;
 }
 
 button:hover {
-    box-shadow: 0px 0px 10pt 1pt white;
+  box-shadow: 0px 0px 10pt 1pt white;
 }
 
 button:active {
-    transform: scale(-.001);
+  transform: scale(-0.001);
 }
 
-
-
-label{ grid-column: 2 / 3;
-    justify-self: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
+label {
+  grid-column: 2 / 3;
+  justify-self: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
-    grid-column: 2 / 3;
-    width: 40%;
-    justify-self: center;
-    margin-bottom: 10px;
-    height: 20pt;
-    box-shadow: 0px 0px 10pt 1pt white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 16pt;
-    text-align: center;
+  grid-column: 2 / 3;
+  width: 40%;
+  justify-self: center;
+  margin-bottom: 10px;
+  height: 20pt;
+  box-shadow: 0px 0px 10pt 1pt white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
 }
 
 ol {
-    grid-column: 1 / 4;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-self: center;
-    font-size: 14pt;
+  grid-column: 1 / 4;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-self: center;
+  font-size: 14pt;
 }
